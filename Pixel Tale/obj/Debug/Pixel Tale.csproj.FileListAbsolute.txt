@@ -1,0 +1,20 @@
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\MonoGame.Framework.dll.config
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\x86\SDL2.dll
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\x64\SDL2.dll
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\x86\soft_oal.dll
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\x64\soft_oal.dll
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\x86\libSDL2-2.0.so.0
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\x64\libSDL2-2.0.so.0
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\x86\libopenal.so.1
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\x64\libopenal.so.1
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\libSDL2-2.0.0.dylib
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\libopenal.1.dylib
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\Pixel Tale.exe
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\Pixel Tale.pdb
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\MonoGame.Framework.dll
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\obj\Debug\Pixel Tale.csprojAssemblyReference.cache
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\obj\Debug\Pixel Tale.csproj.CoreCompileInputs.cache
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\obj\Debug\Pixel Tale.csproj.CopyComplete
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\obj\Debug\Pixel Tale.exe
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\obj\Debug\Pixel Tale.pdb
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\Content\Splash\doge_by_kawiku-d70lb8q.xnb
