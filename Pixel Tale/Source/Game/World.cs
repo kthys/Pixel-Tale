@@ -12,12 +12,24 @@ using Microsoft.Xna.Framework.Input.Touch;
 using Microsoft.Xna.Framework.Media;
 #endregion
 
+
 namespace Pixel_Tale
 {
-    public class Globals
+    public class World
     {
-        public static ContentManager content;
-        public static SpriteBatch spriteBatch;
-        public static Keyboardinput keyboard;
+        public Player player;
+
+        public World()
+        {
+            player = new Player("Sprites/Player", new Vector2(300, 300), new Vector2(64,64));
+        }
+        public virtual void Update()
+        {
+            player.Update();
+        }
+        public virtual void Draw()
+        {
+            player.Draw();
+        }
     }
 }
