@@ -17,4 +17,5 @@ D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\obj\Debug\Pixel Tale.csproj.CoreCo
 D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\obj\Debug\Pixel Tale.csproj.CopyComplete
 D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\obj\Debug\Pixel Tale.exe
 D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\obj\Debug\Pixel Tale.pdb
-D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\Content\Splash\doge_by_kawiku-d70lb8q.xnb
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\Content\Input_ico\CursorArrow.xnb
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\Content\Sprites\Player.xnb

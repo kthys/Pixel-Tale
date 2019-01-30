@@ -16,6 +16,7 @@ namespace Pixel_Tale
 {
     public class Basic2d
     {
+        public float rot;
         public Vector2 pos, dims;
         public Texture2D myModel;
 
@@ -32,12 +33,21 @@ namespace Pixel_Tale
 
         }
 
-        public virtual void Draw()
+        public virtual void Draw(Vector2 OFFSET)
         {
             if(myModel != null)
             {
-                Globals.spriteBatch.Draw(myModel, new Rectangle((int)(pos.X), (int)(pos.Y), (int)dims.X, (int)dims.Y), null,Color.White, 0.0f, new Vector2(myModel.Bounds.Width/2, myModel.Bounds.Height/2), new SpriteEffects(), 0); // Null in the middle allow to only use a region of the sprite
+                Globals.spriteBatch.Draw(myModel, new Rectangle((int)(pos.X + OFFSET.X), (int)(pos.Y + OFFSET.Y), (int)dims.X, (int)dims.Y), null,Color.White, rot, new Vector2(myModel.Bounds.Width/2, myModel.Bounds.Height/2), new SpriteEffects(), 0); // Null in the middle allow to only use a region of the sprite
                 // Bounds are from the middle, that's why it's divided by 2
+
+            }
+        }
+        public virtual void Draw(Vector2 OFFSET, Vector2 ORIGIN)
+        {
+            if (myModel != null)
+            {
+                Globals.spriteBatch.Draw(myModel, new Rectangle((int)(pos.X + OFFSET.X), (int)(pos.Y + OFFSET.Y), (int)dims.X, (int)dims.Y), null, Color.White, rot, new Vector2(ORIGIN.X, ORIGIN.Y), new SpriteEffects(), 0); // Null in the middle allow to only use a region of the sprite
+                                                                                                                                                                        // Custom origin instead of the middle
 
             }
         }

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>D:/Mes documents/GitHub/Pixel Tale/Pixel Tale/Content/Splash/doge_by_kawiku-d70lb8q.png</SourceFile>
-  <SourceTime>2015-07-27T01:07:56.113795+02:00</SourceTime>
-  <DestFile>D:/Mes documents/GitHub/Pixel Tale/Pixel Tale/Content/bin/DesktopGL/Content/Splash/doge_by_kawiku-d70lb8q.xnb</DestFile>
-  <DestTime>2019-01-28T23:11:45.358755+01:00</DestTime>
+  <SourceFile>D:/Mes documents/GitHub/Pixel Tale/Pixel Tale/Content/Player.png</SourceFile>
+  <SourceTime>2019-01-30T00:52:23.480529+01:00</SourceTime>
+  <DestFile>D:/Mes documents/GitHub/Pixel Tale/Pixel Tale/Content/bin/DesktopGL/Player.xnb</DestFile>
+  <DestTime>2019-01-30T00:55:04.0401576+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-08T17:35:54+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

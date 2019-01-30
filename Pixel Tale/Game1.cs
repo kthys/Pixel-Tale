@@ -23,6 +23,8 @@ namespace Pixel_Tale
         SpriteBatch spriteBatch;
 
         World world;
+
+        Basic2d cursor;
         
         public Game1()
         {
@@ -54,7 +56,12 @@ namespace Pixel_Tale
             Globals.spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
+
+            cursor = new Basic2d("Input_ico/CursorArrow", new Vector2(0,0), new Vector2(28,28));
+
             Globals.keyboard = new Keyboardinput();
+            Globals.mouse = new MouseControl();
+
             world = new World();
         }
 
@@ -79,9 +86,12 @@ namespace Pixel_Tale
 
             // TODO: Add your update logic here
             Globals.keyboard.Update();
+            Globals.mouse.Update();
+
             world.Update();
 
             Globals.keyboard.UpdateOld();
+            Globals.mouse.UpdateOld();
             
             base.Update(gameTime);
         }
@@ -98,9 +108,11 @@ namespace Pixel_Tale
 
             Globals.spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend);
 
-            world.Draw();
+            world.Draw(Vector2.Zero);
 
+            cursor.Draw(new Vector2(Globals.mouse.newMousePos.X, Globals.mouse.newMousePos.Y), new Vector2(0, 0));
             Globals.spriteBatch.End();
+
             base.Draw(gameTime);
         }
     }

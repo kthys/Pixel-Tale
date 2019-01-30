@@ -27,9 +27,9 @@ namespace Pixel_Tale
         {
             player.Update();
         }
-        public virtual void Draw()
+        public virtual void Draw(Vector2 OFFSET)
         {
-            player.Draw();
+            player.Draw(OFFSET);
         }
     }
 }
