@@ -41,6 +41,13 @@ namespace Pixel_Tale
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
+            Globals.screenWidth = 800;
+            Globals.screenHeight = 500;
+
+            graphics.PreferredBackBufferHeight = Globals.screenHeight;
+            graphics.PreferredBackBufferWidth = Globals.screenWidth;
+
+            graphics.ApplyChanges();
 
             base.Initialize();
         }
@@ -85,6 +92,7 @@ namespace Pixel_Tale
                 Exit();
 
             // TODO: Add your update logic here
+            Globals.gameTime = gameTime;
             Globals.keyboard.Update();
             Globals.mouse.Update();
 

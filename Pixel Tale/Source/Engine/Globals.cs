@@ -14,6 +14,10 @@ using Microsoft.Xna.Framework.Media;
 
 namespace Pixel_Tale
 {
+
+    public delegate void PassObject(object i);
+    public delegate object PassObjectReturn(object i);
+
     public class Globals
     {
         public static int screenHeight, screenWidth;
@@ -24,6 +28,8 @@ namespace Pixel_Tale
 
         public static Keyboardinput keyboard;
         public static MouseControl mouse;
+
+        public static GameTime gameTime;
 
         public static float GetDistance(Vector2 pos, Vector2 target)
         {

@@ -14,7 +14,7 @@ using Microsoft.Xna.Framework.Media;
 
 namespace Pixel_Tale
 {
-    public class Player : Basic2d //inheritance from basic2d
+    public class Player : Unit //inheritance from Unit
     {
         public float speed;
         public Player(string PATH, Vector2 POS, Vector2 DIMS) : base(PATH, POS, DIMS)
@@ -44,6 +44,11 @@ namespace Pixel_Tale
             }
 
             rot = Globals.RotateTowards(pos, new Vector2(Globals.mouse.newMousePos.X, Globals.mouse.newMousePos.Y));
+
+            if (Globals.mouse.LeftClick())
+            {
+                GameGlobals.PassProjectile(new Fireball(new Vector2(pos.X, pos.Y), this, new Vector2(Globals.mouse.newMousePos.X, Globals.mouse.newMousePos.Y))); //forced to set a new vector2 or the pos will update the player and the player will move
+            }
 
             base.Update();
         }

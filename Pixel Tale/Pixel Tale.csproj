@@ -42,6 +42,8 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Source\Engine\GameGlobals.cs" />
+    <Compile Include="Source\Engine\GameTImer.cs" />
     <Compile Include="Source\Engine\Globals.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="Program.cs" />
@@ -50,7 +52,10 @@
     <Compile Include="Source\Engine\Input\Keyboardinput.cs" />
     <Compile Include="Source\Engine\Basic2d.cs" />
     <Compile Include="Source\Engine\Input\MouseControl.cs" />
-    <Compile Include="Source\Game\Player.cs" />
+    <Compile Include="Source\Game\Projectiles\Fireball.cs" />
+    <Compile Include="Source\Game\Unit.cs" />
+    <Compile Include="Source\Game\Unit\Player.cs" />
+    <Compile Include="Source\Game\Projectile2d.cs" />
     <Compile Include="Source\Game\World.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -114,7 +119,10 @@
     <Content Include="Content\Input_ico\CursorArrow.xnb">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Content\Sprites\Player.xnb">
+    <Content Include="Content\Sprites\Player\Player.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sprites\Projectiles\Fireball.xnb">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
