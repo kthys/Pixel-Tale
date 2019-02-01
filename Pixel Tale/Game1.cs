@@ -20,7 +20,6 @@ namespace Pixel_Tale
     public class Game1 : Game
     {
         GraphicsDeviceManager graphics;
-        SpriteBatch spriteBatch;
 
         World world;
 

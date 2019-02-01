@@ -1,4 +1,9 @@
 D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\MonoGame.Framework.dll.config
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\Content\Input_ico\CursorArrow.xnb
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\Content\Sprites\Player\Player.xnb
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\Content\Sprites\Projectiles\Fireball.xnb
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\Content\Sprites\Monsters\Imp.xnb
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\Content\Sprites\Misc\circle.xnb
 D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\x86\SDL2.dll
 D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\x64\SDL2.dll
 D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\x86\soft_oal.dll
@@ -12,11 +17,7 @@ D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\libopen
 D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\Pixel Tale.exe
 D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\Pixel Tale.pdb
 D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\MonoGame.Framework.dll
-D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\obj\Debug\Pixel Tale.csprojAssemblyReference.cache
 D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\obj\Debug\Pixel Tale.csproj.CoreCompileInputs.cache
 D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\obj\Debug\Pixel Tale.csproj.CopyComplete
 D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\obj\Debug\Pixel Tale.exe
 D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\obj\Debug\Pixel Tale.pdb
-D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\Content\Input_ico\CursorArrow.xnb
-D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\Content\Sprites\Player\Player.xnb
-D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\Content\Sprites\Projectiles\Fireball.xnb

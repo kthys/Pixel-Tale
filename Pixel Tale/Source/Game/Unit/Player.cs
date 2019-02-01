@@ -16,12 +16,12 @@ namespace Pixel_Tale
 {
     public class Player : Unit //inheritance from Unit
     {
-        public float speed;
+        public new float speed;
         public Player(string PATH, Vector2 POS, Vector2 DIMS) : base(PATH, POS, DIMS)
         {
             speed = 2.0f;
         }
-        public override void Update()
+        public override void Update(Vector2 OFFSET)
         {
             if (Globals.keyboard.GetPress("A"))
             {
@@ -50,7 +50,7 @@ namespace Pixel_Tale
                 GameGlobals.PassProjectile(new Fireball(new Vector2(pos.X, pos.Y), this, new Vector2(Globals.mouse.newMousePos.X, Globals.mouse.newMousePos.Y))); //forced to set a new vector2 or the pos will update the player and the player will move
             }
 
-            base.Update();
+            base.Update(OFFSET);
         }
         public override void Draw(Vector2 OFFSET)
         {

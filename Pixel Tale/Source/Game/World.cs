@@ -20,28 +20,61 @@ namespace Pixel_Tale
         public Vector2 offset;
         public Player player;
         public List<Projectile2d> projectiles = new List<Projectile2d>(); // Create the list of projectiles
+        public List<Monster> monsters = new List<Monster>();
+        public List<SpawnPoint> spawnPoints = new List<SpawnPoint>();
 
         public World()
         {
             player = new Player("Sprites/Player/Player", new Vector2(300, 300), new Vector2(64,64));
 
             GameGlobals.PassProjectile = AddProjectile;
+            GameGlobals.PassMonster = AddMonster;
 
             offset = new Vector2(0, 0);
+
+            spawnPoints.Add(new SpawnPoint("Sprites/Misc/circle", new Vector2(50,50), new Vector2(35, 35)));
+
+            spawnPoints.Add(new SpawnPoint("Sprites/Misc/circle", new Vector2(Globals.screenWidth/2, 50), new Vector2(35, 35)));
+            spawnPoints[spawnPoints.Count - 1].spawnTimer.AddToTimer(500);
+
+            spawnPoints.Add(new SpawnPoint("Sprites/Misc/circle", new Vector2(Globals.screenWidth - 50, 50), new Vector2(35, 35)));
+            spawnPoints[spawnPoints.Count - 1].spawnTimer.AddToTimer(1000);
         }
         public virtual void Update()
         {
-            player.Update();
+            player.Update(offset);
 
             for(int i=0; i < projectiles.Count; i++)
             {
-                projectiles[i].Update(offset, null);
+                projectiles[i].Update(offset, monsters.ToList<Unit>());
                 if (projectiles[i].done)
                 {
                     projectiles.RemoveAt(i);
                     i--;
                 }
             }
+
+            for (int i = 0; i < monsters.Count; i++)
+            {
+                monsters[i].Update(offset, player);
+                if (monsters[i].dead)
+                {
+                    monsters.RemoveAt(i);
+                    i--;
+                }
+            }
+
+            for(int i = 0; i < spawnPoints.Count; i++)
+            {
+                spawnPoints[i].Update(offset);
+
+            }
+
+        }
+
+        public virtual void AddMonster(object INFO)
+        {
+            monsters.Add((Monster)INFO);
         }
 
         public virtual void AddProjectile(object INFO)
@@ -55,6 +88,17 @@ namespace Pixel_Tale
             {
                 projectiles[i].Draw(offset);
             }
+
+            for (int i = 0; i < spawnPoints.Count; i++)
+            {
+                spawnPoints[i].Draw(offset);
+            }
+
+            for (int i = 0; i < monsters.Count; i++)
+            {
+                monsters[i].Draw(offset);
+            }
+
         }
     }
 }

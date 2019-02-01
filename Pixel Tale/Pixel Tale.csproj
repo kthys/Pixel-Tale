@@ -52,8 +52,11 @@
     <Compile Include="Source\Engine\Input\Keyboardinput.cs" />
     <Compile Include="Source\Engine\Basic2d.cs" />
     <Compile Include="Source\Engine\Input\MouseControl.cs" />
+    <Compile Include="Source\Game\Unit\Monster.cs" />
     <Compile Include="Source\Game\Projectiles\Fireball.cs" />
+    <Compile Include="Source\Game\SpawnPoint.cs" />
     <Compile Include="Source\Game\Unit.cs" />
+    <Compile Include="Source\Game\Monsters\Wolf.cs" />
     <Compile Include="Source\Game\Unit\Player.cs" />
     <Compile Include="Source\Game\Projectile2d.cs" />
     <Compile Include="Source\Game\World.cs" />
@@ -123,6 +126,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\Sprites\Projectiles\Fireball.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sprites\Monsters\Imp.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sprites\Misc\circle.xnb">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

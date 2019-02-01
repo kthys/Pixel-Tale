@@ -14,25 +14,23 @@ using Microsoft.Xna.Framework.Media;
 
 namespace Pixel_Tale
 {
-    public class Unit : Basic2d //inheritance from basic2d
+    public class Monster : Unit //inheritance from Unit
     {
-        public float speed, hitDist;
-        public bool dead;
-        public Unit(string PATH, Vector2 POS, Vector2 DIMS) : base(PATH, POS, DIMS)
+       
+        public Monster(string PATH, Vector2 POS, Vector2 DIMS) : base(PATH, POS, DIMS)
         {
-            dead = false;
-            speed = 2.0f;
-            hitDist = 35.0f;
+            
         }
-        public override void Update(Vector2 OFFSET)
+        public virtual void Update(Vector2 OFFSET, Player PLAYER)
         {
-
+            AI(PLAYER);
             base.Update(OFFSET);
         }
 
-        public virtual void GetHit()
+        public virtual void AI(Player PLAYER)
         {
-            dead = true;
+            pos += Globals.RadialMovement(PLAYER.pos, pos, speed);
+            rot = Globals.RotateTowards(pos, PLAYER.pos);
         }
 
         public override void Draw(Vector2 OFFSET)

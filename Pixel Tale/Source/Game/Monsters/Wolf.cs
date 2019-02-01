@@ -14,14 +14,19 @@ using Microsoft.Xna.Framework.Media;
 
 namespace Pixel_Tale
 {
-    public class GameGlobals
+    public class Wolf : Monster //inheritance from Monster
     {
-        public GameGlobals()
+       
+        public Wolf(Vector2 POS) : base("Sprites/Monsters/Imp", POS, new Vector2(40,40))
         {
-
+            
+        }
+        public override void Update(Vector2 OFFSET, Player PLAYER)
+        {
+            
+            base.Update(OFFSET, PLAYER);
         }
 
-
-        public static PassObject PassProjectile, PassMonster;
+        
     }
 }

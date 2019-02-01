@@ -54,6 +54,15 @@ namespace Pixel_Tale
         }
         public virtual bool CollisionTest(List<Unit> UNITS)
         {
+            for(int i = 0; i<UNITS.Count; i++)
+            {
+                if(Globals.GetDistance(pos,UNITS[i].pos) < UNITS[i].hitDist) //if the distance between the projectile and the unit is smaller than the unit hit distance
+                {
+                    UNITS[i].GetHit();
+                    return true;
+                }
+            }
+
             return false;
         }
 
