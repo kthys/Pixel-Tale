@@ -19,8 +19,11 @@ namespace Pixel_Tale
     /// </summary>
     public class Game1 : Game
     {
-        GraphicsDeviceManager graphics;
 
+        public GraphicsDeviceManager graphics;
+        public Camera camera;
+        public Viewport viewport;
+        
         World world;
 
         Basic2d cursor;
@@ -46,9 +49,20 @@ namespace Pixel_Tale
             graphics.PreferredBackBufferHeight = Globals.screenHeight;
             graphics.PreferredBackBufferWidth = Globals.screenWidth;
 
+            viewport = new Viewport();
+            viewport.X = 0;
+            viewport.Y = 0;
+            viewport.Height = Globals.screenHeight;
+            viewport.Width = Globals.screenWidth;
+
+            graphics.GraphicsDevice.Viewport = viewport;
+            camera = new Camera(viewport);
+
+
             graphics.ApplyChanges();
 
             base.Initialize();
+
         }
 
         /// <summary>
@@ -94,6 +108,8 @@ namespace Pixel_Tale
             Globals.gameTime = gameTime;
             Globals.keyboard.Update();
             Globals.mouse.Update();
+            
+            camera.UpdateCamera(viewport);
 
             world.Update();
 

@@ -16,34 +16,40 @@ namespace Pixel_Tale
 {
     public class Player : Unit //inheritance from Unit
     {
-        public new float speed;
         public Player(string PATH, Vector2 POS, Vector2 DIMS) : base(PATH, POS, DIMS)
         {
             speed = 2.0f;
         }
         public override void Update(Vector2 OFFSET)
         {
+            
+
             if (Globals.keyboard.GetPress("A"))
             {
                 pos = new Vector2(pos.X - speed, pos.Y);
+                
             }
 
             if (Globals.keyboard.GetPress("W"))
             {
                 pos = new Vector2(pos.X, pos.Y - speed);
+                
             }
 
             if (Globals.keyboard.GetPress("D"))
             {
                 pos = new Vector2(pos.X + speed, pos.Y);
+                
             }
 
             if (Globals.keyboard.GetPress("S"))
             {
                 pos = new Vector2(pos.X, pos.Y + speed);
+                
             }
 
             rot = Globals.RotateTowards(pos, new Vector2(Globals.mouse.newMousePos.X, Globals.mouse.newMousePos.Y));
+
 
             if (Globals.mouse.LeftClick())
             {

@@ -1,0 +1,23 @@
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Release\MonoGame.Framework.dll.config
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Release\Content\Input_ico\CursorArrow.xnb
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Release\Content\Sprites\Player\Player.xnb
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Release\Content\Sprites\Projectiles\Fireball.xnb
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Release\Content\Sprites\Monsters\Imp.xnb
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Release\Content\Sprites\Misc\circle.xnb
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Release\x86\SDL2.dll
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Release\x64\SDL2.dll
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Release\x86\soft_oal.dll
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Release\x64\soft_oal.dll
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Release\x86\libSDL2-2.0.so.0
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Release\x64\libSDL2-2.0.so.0
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Release\x86\libopenal.so.1
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Release\x64\libopenal.so.1
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Release\libSDL2-2.0.0.dylib
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Release\libopenal.1.dylib
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Release\Pixel Tale.exe
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Release\Pixel Tale.pdb
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Release\MonoGame.Framework.dll
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\obj\Release\Pixel Tale.csproj.CoreCompileInputs.cache
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\obj\Release\Pixel Tale.csproj.CopyComplete
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\obj\Release\Pixel Tale.exe
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\obj\Release\Pixel Tale.pdb

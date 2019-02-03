@@ -27,6 +27,10 @@ namespace Pixel_Tale
             base.Update(OFFSET, PLAYER);
         }
 
-        
+        public override void Draw(Vector2 OFFSET)
+        {
+            base.Draw(OFFSET);
+        }
+
     }
 }

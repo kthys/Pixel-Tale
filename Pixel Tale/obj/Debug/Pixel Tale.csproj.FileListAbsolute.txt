@@ -21,3 +21,14 @@ D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\obj\Debug\Pixel Tale.csproj.CoreCo
 D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\obj\Debug\Pixel Tale.csproj.CopyComplete
 D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\obj\Debug\Pixel Tale.exe
 D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\obj\Debug\Pixel Tale.pdb
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\Content\Fonts\Arial16.spritefont
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\Content\Fonts\Arial16.xnb
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\Content\Fonts\Arial20Bold.xnb
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\Content\Fonts\Arial24.xnb
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\Content\Fonts\Lindsey13.xnb
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\Content\Fonts\Lindsey15.xnb
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\Content\Fonts\Lindsey16.xnb
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\Content\Fonts\Lindsey17.xnb
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\Content\Fonts\Lindsey18.xnb
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\Content\Fonts\Lindsey20.xnb
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\obj\Debug\Pixel Tale.csprojAssemblyReference.cache
