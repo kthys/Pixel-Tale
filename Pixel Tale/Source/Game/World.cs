@@ -31,12 +31,16 @@ namespace Pixel_Tale
 
         public World()
         {
+            
+
             numKilled = 0;
 
             player = new Player("Sprites/Player/Player", new Vector2(300, 300), new Vector2(64, 64));
 
+
             GameGlobals.PassProjectile = AddProjectile;
             GameGlobals.PassMonster = AddMonster;
+            GameGlobals.CheckScroll = CheckScroll;
         
 
             offset = new Vector2(0, 0);
@@ -83,6 +87,8 @@ namespace Pixel_Tale
 
             }
 
+            
+
             ui.Update(this);
 
 
@@ -96,6 +102,32 @@ namespace Pixel_Tale
         public virtual void AddProjectile(object INFO)
         {
             projectiles.Add((Projectile2d)INFO);
+        }
+
+        public virtual void CheckScroll(object INFO)
+        {
+            Vector2 tempPos = (Vector2)INFO;
+
+            if (tempPos.X < -offset.X + (Globals.screenWidth * .4f))
+            {
+                offset = new Vector2(offset.X + player.speed, offset.Y);
+            }
+
+            if (tempPos.X > -offset.X + (Globals.screenWidth * .6f))
+            {
+                offset = new Vector2(offset.X - player.speed, offset.Y);
+            }
+
+            if (tempPos.Y < -offset.Y + (Globals.screenHeight * .4f))
+            {
+                offset = new Vector2(offset.X , offset.Y + player.speed);
+            }
+
+            if (tempPos.Y > -offset.Y + (Globals.screenHeight * .6f))
+            {
+                offset = new Vector2(offset.X, offset.Y - player.speed);
+            }
+
         }
 
         public virtual void Draw(Vector2 OFFSET)

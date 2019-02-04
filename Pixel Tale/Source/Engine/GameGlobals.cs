@@ -22,6 +22,6 @@ namespace Pixel_Tale
         }
 
 
-        public static PassObject PassProjectile, PassMonster;
+        public static PassObject PassProjectile, PassMonster, CheckScroll;
     }
 }

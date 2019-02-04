@@ -24,11 +24,11 @@ namespace Pixel_Tale
 
         private float currentMouseWheelValue, previousMouseWheelValue, zoom, previousZoom;
 
-        public Camera(Viewport viewport)
+        public Camera(Viewport viewport, Player PLAYER)
         {
             Bounds = viewport.Bounds;
             Zoom = 1f;
-            Position = Vector2.Zero;
+            Position = PLAYER.pos;
         }
 
 
@@ -62,6 +62,7 @@ namespace Pixel_Tale
         {
             Vector2 newPosition = Position + movePosition;
             Position = newPosition;
+
         }
 
         public void AdjustZoom(float zoomAmount)
@@ -77,15 +78,17 @@ namespace Pixel_Tale
             }
         }
 
-        public void UpdateCamera(Viewport bounds)
+        public void UpdateCamera(Viewport bounds, Player PLAYER)
         {
             Bounds = bounds.Bounds;
             UpdateMatrix();
 
             Vector2 cameraMovement = Vector2.Zero;
-            int moveSpeed;
+            float moveSpeed;
+            moveSpeed = PLAYER.speed;
+            
 
-            if (Zoom > .8f)
+            /*if (Zoom > .8f)
             {
                 moveSpeed = 15;
             }
@@ -104,7 +107,7 @@ namespace Pixel_Tale
             else
             {
                 moveSpeed = 10;
-            }
+            } */
 
 
             if (Globals.keyboard.GetPress("W"))
@@ -125,7 +128,7 @@ namespace Pixel_Tale
             if (Globals.keyboard.GetPress("D"))
             {
                 cameraMovement.X = moveSpeed;
-            }
+            } 
 
             previousMouseWheelValue = currentMouseWheelValue;
             currentMouseWheelValue = Mouse.GetState().ScrollWheelValue;
@@ -149,7 +152,6 @@ namespace Pixel_Tale
                 Console.WriteLine(zoom);
 
             }
-
             MoveCamera(cameraMovement);
         }
     }
