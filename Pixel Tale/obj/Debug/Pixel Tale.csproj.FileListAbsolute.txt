@@ -32,3 +32,5 @@ D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\Content
 D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\Content\Fonts\Lindsey18.xnb
 D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\Content\Fonts\Lindsey20.xnb
 D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\obj\Debug\Pixel Tale.csprojAssemblyReference.cache
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\Content\UI\shade.xnb
+D:\Mes documents\GitHub\Pixel Tale\Pixel Tale\bin\DesktopGL\AnyCPU\Debug\Content\UI\solid.xnb

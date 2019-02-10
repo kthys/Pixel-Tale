@@ -31,6 +31,12 @@ namespace Pixel_Tale
         {
             pos += Globals.RadialMovement(PLAYER.pos, pos, speed);
             rot = Globals.RotateTowards(pos, PLAYER.pos);
+
+            if (Globals.GetDistance(pos, PLAYER.pos) < 15)
+            {
+                PLAYER.GetHit(1);
+                dead = true;
+            }
         }
 
         public override void Draw(Vector2 OFFSET)

@@ -18,15 +18,18 @@ namespace Pixel_Tale
     {
 
         public SpriteFont font;
+        public QuantityDisplayBar healthBar;
 
         public UI()
         {
             font = Globals.content.Load<SpriteFont>("Fonts/Arial16");
+
+            healthBar = new QuantityDisplayBar(new Vector2(104, 16), 2, Color.Red);
         }
 
         public void Update(World WORLD)
         {
-
+            healthBar.Update(WORLD.player.health, WORLD.player.healthMax);
         }
 
         public void Draw(World WORLD)
@@ -34,6 +37,8 @@ namespace Pixel_Tale
             string tempStr = "Num Killed = " + WORLD.numKilled;
             Vector2 strDims = font.MeasureString(tempStr); // Gives the dimensions of the string
             Globals.spriteBatch.DrawString(font, tempStr, new Vector2(Globals.screenWidth/2 - strDims.X/2, Globals.screenHeight - 40), Color.Black);
+
+            healthBar.Draw(new Vector2(20, Globals.screenHeight - 40));
         }
     }
 }

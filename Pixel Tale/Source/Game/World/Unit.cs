@@ -16,13 +16,17 @@ namespace Pixel_Tale
 {
     public class Unit : Basic2d //inheritance from basic2d
     {
-        public float speed, hitDist;
+        public float speed, hitDist, health, healthMax;
+
         public bool dead;
+
         public Unit(string PATH, Vector2 POS, Vector2 DIMS) : base(PATH, POS, DIMS)
         {
             dead = false;
             speed = 2.0f;
             hitDist = 35.0f;
+            health = 1;
+            healthMax = health;
         }
         public override void Update(Vector2 OFFSET)
         {
@@ -30,9 +34,14 @@ namespace Pixel_Tale
             base.Update(OFFSET);
         }
 
-        public virtual void GetHit()
+        public virtual void GetHit(float damage)
         {
-            dead = true;
+            health -= damage;
+            if (health <= 0)
+            {
+                dead = true;
+            }
+            
         }
 
         public override void Draw(Vector2 OFFSET)

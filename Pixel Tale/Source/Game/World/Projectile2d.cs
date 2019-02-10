@@ -58,7 +58,7 @@ namespace Pixel_Tale
             {
                 if(Globals.GetDistance(pos,UNITS[i].pos) < UNITS[i].hitDist) //if the distance between the projectile and the unit is smaller than the unit hit distance
                 {
-                    UNITS[i].GetHit();
+                    UNITS[i].GetHit(1);
                     return true;
                 }
             }
